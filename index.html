@@ -110,15 +110,36 @@
 
 <!-- Contact -->
 <section id="contact" class="container py-5">
-  <form
-  action="https://formspree.io/f/xanblpga" 
-  method="POST"
->
   <h2>Contact</h2>
- 
-  <p>Instagram: <a href="https://www.instagram.com/ajmgwd/?locale=ja_JP" target="_blank">@ajmgwd</a></p>
-</section>
+  
+  <form
+    action="https://formspree.io/f/xanblpga" 
+    method="POST"
+  >
+    <div class="mb-3">
+      <label for="name" class="form-label">お名前 *</label>
+      <input type="text" name="name" id="name" class="form-control" required>
+    </div>
 
+    <div class="mb-3">
+      <label for="email" class="form-label">Email *</label>
+      <input type="email" name="email" id="email" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="subject" class="form-label">件名</label>
+      <input type="text" name="subject" id="subject" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label for="message" class="form-label">メッセージ</label>
+      <textarea name="message" id="message" class="form-control" rows="5"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-dark">送信</button>
+  </form>
+  <p class="mt-4">Instagram: <a href="https://www.instagram.com/ajmgwd/?locale=ja_JP" target="_blank">@ajmgwd</a></p>
+</section>
 <!-- Footer -->
 <footer>
   &copy; 2025 Ami Yoshida
@@ -131,4 +152,5 @@
 
 </body>
 </html>
+
 
